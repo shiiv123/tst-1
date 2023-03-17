@@ -29,20 +29,42 @@
          max-width: 720px;
          margin: 0 auto;
         }
+      .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
     </style>
   </head>
   <body>
     <div id = "Container">
-    <h1>my careers</h1>
+    <h1>{{company}} my careers</h1>
     <img "benner" src = "https://tst-1-1.shiv-bhushanbhu.repl.co/static/tree-736885__480.jpg" >
     <h2>job list</h2>
     <p>
       it’s simpler to market your self when you’re working in a area of expertise because it narrows down your focus. For example, an acupuncturist who focuses on infertility can solely target those searching for that service. This helps him construct a customer listing fast than if he had been making an attempt to entice every person struggling from pain. However, this approach doesn’t work until the individual is passionate about his or her subject of expertise; otherwise, boredom will set in and drain away power wished for success.
     </p> 
     <h2>Open positions</h2>
-    <p>Todo</p>
+    <p>
+      {{jobs}}
+    </p>
       <div style= "text-align:center;">
-    <button>contact us</button>
+        <button class="button button1">contact us</button>
+        <p class= "mt-4">Copywright 2022, jovi</p>
       </div>
     </div>
   </body>
