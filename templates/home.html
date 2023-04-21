@@ -1,73 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> My site </title>
-    <style>
-      h1{font-size: 40px;
-         font-familiy: Roboto;
-         fony-weight: normal;
-         color: rgb(100,0,0);
-         text-align: center;
-        }
-      #benner{
-        width: 100%;
-        hight: 360px;
-        object-fit: cover;
-      }
-      h2{font-size: 32px;
-         font-familiy: Roboto;
-         fony-weight: normal;
-         color: rgb(50,0,0);
-         text-align: center;
-        }
-      p{
-         font-familiy: Roboto;
-         fony-weight: normal;
-         color: rgb(80,80,80);
-        }
-      #Container{
-         max-width: 720px;
-         margin: 0 auto;
-        }
-      .button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.button1 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
-}
-    </style>
+    <title>Say hello</title> 
   </head>
   <body>
-    <div id = "Container">
-    <h1>{{company}} my careers</h1>
-    <img "benner" src = "https://tst-1-1.shiv-bhushanbhu.repl.co/static/tree-736885__480.jpg" >
-    <h2>job list</h2>
-    <p>
-      it’s simpler to market your self when you’re working in a area of expertise because it narrows down your focus. For example, an acupuncturist who focuses on infertility can solely target those searching for that service. This helps him construct a customer listing fast than if he had been making an attempt to entice every person struggling from pain. However, this approach doesn’t work until the individual is passionate about his or her subject of expertise; otherwise, boredom will set in and drain away power wished for success.
-    </p> 
-    <h2>Open positions</h2>
-    <div>
-      {% for job in jobs %}
-        {% include 'jobitem.html' %}
-      {% endfor %}
-    </div>
-      <div style= "text-align:center;">
-        <button class="button button1">contact us</button>
-        <p class= "mt-4">Copywright 2022, jovi</p>
-      </div>
-    </div>
+    <img scr ="https://replit.com/@Shiv-BhushanBhu/tst-1-1#static/tree-736885__480.jpg">
+    <br>
+    <form action = "greet" method = "post">
+      <p>what's your name?</p>
+      <br>
+      <input type = "text" name="name_input">
+      <br>
+      <input type = "submit" value="greet" id = "greet">
+    </form>
   </body>
 </html>
