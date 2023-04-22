@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset = "utf-8">
     <title>Say hello</title> 
   </head>
   <body>
     <img scr ="https://replit.com/@Shiv-BhushanBhu/tst-1-1#static/tree-736885__480.jpg">
     <br>
     <form action = "greet" method = "post">
-      <p>what's your name?</p>
+      {%for message in get_flashed_messages()%}
+        <p> {{message}} </p>
+      {% endfor %}
       <br>
       <input type = "text" name="name_input">
       <br>
